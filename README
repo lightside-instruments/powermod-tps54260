@@ -1,4 +1,4 @@
-powermod-tps54202 is a simple DC-DC regulator board
+powermod-tps54260 is a simple DC-DC regulator board
 developed by Lightside Instruments AS.
 
 The project includes schematic and PCB
@@ -7,22 +7,3 @@ design files for KiCAD.
 The project is published by Lightside Instruments AS
 under TAPR Open Hardware License. Read the LICENSE file
 for details.
-
-
-==Calculating the EN pin resistor pair==
-According to the tps54202h.pdf (SLVSDG7A – APRIL 2016 – REVISED APRIL 2021)
-there is a formula for calculating the resistor pair to be used for driving the EN pin:
-
-Here is a matlab script for calculating the values:
-
-v_en_rising=1.28
-v_en_falling=1.25
-rpd=1000000
-ih=1/1000000
-v_start=3.1
-v_stop=v_start-0.48
-r4=((v_en_falling/v_en_rising)*v_start-3)/ih
-r5=r4*rpd/((v_start/v_en_rising-1)*rpd-r4)
-
-You can also set r4=10000 ohm and find the coresponding r5 e.g. ~7K
-

@@ -1,38 +1,5 @@
-powermod-tps54202 (3.0) jammy; urgency=medium
+powermod-tps54260 (1.4) unstable; urgency=medium
 
-  * Increased width with 2mm and added 2x7 connectors instead the 2x6
-  * Left disconnected J1.1, J2.1, J2.2 for future use as control interface I2C or SPI
+  * Initial public release
 
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Tue, 26 Sep 2023 14:51:23 +0200
-
-powermod-tps54202 (2.0) jammy; urgency=medium
-
-  * Changed the function of the first of the GND pins to EN input
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 25 Sep 2023 16:19:01 +0200
-
-powermod-tps54202 (1.3) jammy; urgency=medium
-
-  * Added missing C2 0.1 uF capacitor on input
-  * Layout improved in line with TI datasheet SW node now copper pour area on internal layer
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 02 Jan 2023 16:28:37 +0100
-
-powermod-tps54202 (1.2) jammy; urgency=medium
-
-  * Converted to kicad ver.6 format without any other changes to schematics or layout
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sat, 31 Dec 2022 02:25:36 +0100
-
-powermod-tps54202 (1.1) bullseye; urgency=medium
-
-  * Renamed parts to match the original TI reference design
-  * Fixed bug 49.9 ohm resistor was 49.9K
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sat, 31 Dec 2022 01:52:11 +0100
-
-powermod-tps54202 (1.0) bullseye; urgency=medium
-
-  * Initial
-
- -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Thu, 11 Aug 2022 22:10:48 +0200
+ -- Joar Heimonen <joar@lightside-instruments.com>  Mon, 13 Jan 2025 18:46:31 +0100
